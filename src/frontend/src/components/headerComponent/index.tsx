@@ -50,7 +50,7 @@ export default function Header(): JSX.Element {
     <div className="header-arrangement">
       <div className="header-start-display lg:w-[30%]">
         <Link to="/" onClick={() => checkForChanges(nodes)}>
-          <span className="ml-4 text-2xl">DF</span>
+          <span className="ml-4 text-2xl">DATAFORMER</span>
         </Link>
         <MenuBar removeFunction={checkForChanges} />
       </div>
@@ -104,7 +104,7 @@ export default function Header(): JSX.Element {
       </div>
       <div className="header-end-division lg:w-[30%]">
         <div className="header-end-display">
-          <a
+          {/* <a
             href="https://github.com/DataformerAI/dataformer-app"
             target="_blank"
             rel="noreferrer"
@@ -113,9 +113,9 @@ export default function Header(): JSX.Element {
             <FaGithub className="h-5 w-5" />
             <div className="hidden lg:block">Star</div>
             <div className="header-github-display">{stars ?? 0}</div>
-          </a>
+          </a> */}
           <a
-            href="https://twitter.com/dfapp_ai"
+            href="https://twitter.com/dataformer_ai"
             target="_blank"
             rel="noreferrer"
             className="text-muted-foreground"
@@ -123,7 +123,7 @@ export default function Header(): JSX.Element {
             <RiTwitterXFill className="side-bar-button-size" />
           </a>
           <a
-            href="https://discord.gg/EqksyE2EX9"
+            href="https://dataformer.ai/discord"
             target="_blank"
             rel="noreferrer"
             className="text-muted-foreground"

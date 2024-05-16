@@ -113,7 +113,7 @@ export default function FlowToolbar(): JSX.Element {
             <div>
               <Separator orientation="vertical" />
             </div>
-            <div className="flex cursor-pointer items-center gap-2">
+            {/* <div className="flex cursor-pointer items-center gap-2">
               {currentFlow && currentFlow.data && (
                 <ApiModal flow={currentFlow}>
                   <div
@@ -129,8 +129,8 @@ export default function FlowToolbar(): JSX.Element {
                   </div>
                 </ApiModal>
               )}
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <Separator orientation="vertical" />
             </div>
             <div className="flex items-center gap-2">
@@ -143,7 +143,7 @@ export default function FlowToolbar(): JSX.Element {
               >
                 {ModalMemo}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </Transition>

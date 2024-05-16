@@ -42,14 +42,6 @@ export default function FlowPage({ view }: { view?: boolean }): JSX.Element {
             </main>
           </div>
         )}
-        <a
-          target={"_blank"}
-          href="https://medium.com/logspace/dfapp-datastax-better-together-1b7462cebc4d"
-          className="dfapp-page-icon"
-        >
-          {version && <div className="mt-1">Dataformer App 🤝 DataStax</div>}
-          <div className={version ? "mt-2" : "mt-1"}>DF v{version}</div>
-        </a>
       </div>
     </>
   );
