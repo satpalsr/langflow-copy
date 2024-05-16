@@ -177,11 +177,11 @@ export default function ChatView({
           ) : (
             <div className="chat-alert-box">
               <span>
-                👋 <span className="langflow-chat-span">Langflow Chat</span>
+                👋 <span className="dfapp-chat-span">Dataformer App Chat</span>
               </span>
               <br />
-              <div className="langflow-chat-desc">
-                <span className="langflow-chat-desc-span">
+              <div className="dfapp-chat-desc">
+                <span className="dfapp-chat-desc-span">
                   {CHAT_FIRST_INITIAL_TEXT}{" "}
                   <span>
                     <IconComponent
@@ -196,8 +196,8 @@ export default function ChatView({
           )}
           <div ref={ref}></div>
         </div>
-        <div className="langflow-chat-input-div">
-          <div className="langflow-chat-input">
+        <div className="dfapp-chat-input-div">
+          <div className="dfapp-chat-input">
             <ChatInput
               chatValue={chatValue}
               noInput={!inputTypes.includes("ChatInput")}

@@ -111,10 +111,10 @@ export default function StoreApiKeyModal({
               {CREATE_API_KEY}{" "}
               <a
                 className="text-high-indigo underline"
-                href="https://langflow.store/"
+                href="https://dataformer.store/"
                 target="_blank"
               >
-                langflow.store
+                dataformer.store
               </a>
             </span>
             <div className="">

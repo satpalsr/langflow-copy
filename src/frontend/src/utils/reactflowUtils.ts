@@ -10,7 +10,7 @@ import {
 import ShortUniqueId from "short-unique-id";
 import {
   INPUT_TYPES,
-  LANGFLOW_SUPPORTED_TYPES,
+  DFAPP_SUPPORTED_TYPES,
   OUTPUT_TYPES,
   SUCCESS_BUILD,
   specialCharsRegex,
@@ -799,7 +799,7 @@ function updateGroupNodeTemplate(template: APITemplateType) {
     let type = template[key].type;
     let input_types = template[key].input_types;
     if (
-      LANGFLOW_SUPPORTED_TYPES.has(type) &&
+      DFAPP_SUPPORTED_TYPES.has(type) &&
       !template[key].required &&
       !input_types
     ) {

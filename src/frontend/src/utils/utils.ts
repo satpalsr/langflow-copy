@@ -421,7 +421,7 @@ export function getOutputIds(flow) {
  * @returns {string} - The python code
  */
 export function getPythonCode(flowName: string, tweaksBuildedObject): string {
-  return `from langflow.load import run_flow_from_json
+  return `from dfapp.load import run_flow_from_json
 TWEAKS = ${JSON.stringify(tweaksBuildedObject, null, 2)}
 
 result = run_flow_from_json(flow="${flowName}.json",
@@ -439,9 +439,9 @@ export function getWidgetCode(
   flowName: string,
   isAuth: boolean,
 ): string {
-  return `<script src="https://cdn.jsdelivr.net/gh/langflow-ai/langflow-embedded-chat@1.0_alpha/dist/build/static/js/bundle.min.js"></script>
+  return `<script src="https://cdn.jsdelivr.net/gh/dfapp-ai/dfapp-embedded-chat@1.0_alpha/dist/build/static/js/bundle.min.js"></script>
 
-<langflow-chat
+<dfapp-chat
   window_title="${flowName}"
   flow_id="${flowId}"
   host_url="http://localhost:7860"${
@@ -451,7 +451,7 @@ export function getWidgetCode(
       : ""
   }
 
-></langflow-chat>`;
+></dfapp-chat>`;
 }
 
 export function truncateLongId(id: string): string {
@@ -506,7 +506,7 @@ export function tabsArray(codes: string[], method: number) {
       {
         name: "Chat Widget HTML",
         description:
-          "Insert this code anywhere in your &lt;body&gt; tag. To use with react and other libs, check our <a class='link-color' href='https://langflow.org/guidelines/widget'>documentation</a>.",
+          "Insert this code anywhere in your &lt;body&gt; tag. To use with react and other libs, check our <a class='link-color' href='https://dataformer.ai/guidelines/widget'>documentation</a>.",
         mode: "html",
         image: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
         language: "py",
@@ -540,7 +540,7 @@ export function tabsArray(codes: string[], method: number) {
     {
       name: "Chat Widget HTML",
       description:
-        "Insert this code anywhere in your &lt;body&gt; tag. To use with react and other libs, check our <a class='link-color' href='https://langflow.org/guidelines/widget'>documentation</a>.",
+        "Insert this code anywhere in your &lt;body&gt; tag. To use with react and other libs, check our <a class='link-color' href='https://dataformer.ai/guidelines/widget'>documentation</a>.",
       mode: "html",
       image: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
       language: "py",

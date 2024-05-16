@@ -25,7 +25,7 @@ import {
   TableRow,
 } from "../../components/ui/table";
 import {
-  LANGFLOW_SUPPORTED_TYPES,
+  DFAPP_SUPPORTED_TYPES,
   limitScrollFieldsModal,
 } from "../../constants/constants";
 import useFlowStore from "../../stores/flowStore";
@@ -137,7 +137,7 @@ const EditNodeModal = forwardRef(
                           (templateParam) =>
                             templateParam.charAt(0) !== "_" &&
                             myData.node?.template[templateParam].show &&
-                            LANGFLOW_SUPPORTED_TYPES.has(
+                            DFAPP_SUPPORTED_TYPES.has(
                               myData.node.template[templateParam].type
                             )
                         )

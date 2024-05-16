@@ -25,7 +25,7 @@ import {
   TabsList,
   TabsTrigger,
 } from "../../components/ui/tabs";
-import { LANGFLOW_SUPPORTED_TYPES } from "../../constants/constants";
+import { DFAPP_SUPPORTED_TYPES } from "../../constants/constants";
 import { useDarkStore } from "../../stores/darkStore";
 import useFlowStore from "../../stores/flowStore";
 import { codeTabsPropsType } from "../../types/components";
@@ -263,7 +263,7 @@ export default function CodeTabsComponent({
                                       templateField.charAt(0) !== "_" &&
                                       node.data.node.template[templateField]
                                         .show &&
-                                      LANGFLOW_SUPPORTED_TYPES.has(
+                                      DFAPP_SUPPORTED_TYPES.has(
                                         node.data.node.template[templateField]
                                           .type,
                                       ),

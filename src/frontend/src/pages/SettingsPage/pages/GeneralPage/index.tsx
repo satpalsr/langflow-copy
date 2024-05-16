@@ -107,7 +107,7 @@ export default function GeneralPage() {
             />
           </h2>
           <p className="text-sm text-muted-foreground">
-            Manage settings related to Langflow and your account.
+            Manage settings related to Dataformer App and your account.
           </p>
         </div>
       </div>

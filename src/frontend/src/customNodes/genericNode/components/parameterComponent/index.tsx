@@ -19,7 +19,7 @@ import { Button } from "../../../../components/ui/button";
 import { RefreshButton } from "../../../../components/ui/refreshButton";
 import {
   INPUT_HANDLER_HOVER,
-  LANGFLOW_SUPPORTED_TYPES,
+  DFAPP_SUPPORTED_TYPES,
   OUTPUT_HANDLER_HOVER,
   TOOLTIP_EMPTY,
 } from "../../../../constants/constants";
@@ -363,7 +363,7 @@ export default function ParameterComponent({
     renderTooltips();
   }, [tooltipTitle, flow]);
   return !showNode ? (
-    left && LANGFLOW_SUPPORTED_TYPES.has(type ?? "") && !optionalHandle ? (
+    left && DFAPP_SUPPORTED_TYPES.has(type ?? "") && !optionalHandle ? (
       <></>
     ) : (
       <Button className="h-7 truncate bg-muted p-0 text-sm font-normal text-black hover:bg-muted">
@@ -460,7 +460,7 @@ export default function ParameterComponent({
             )}
           </div>
         </div>
-        {left && LANGFLOW_SUPPORTED_TYPES.has(type ?? "") && !optionalHandle ? (
+        {left && DFAPP_SUPPORTED_TYPES.has(type ?? "") && !optionalHandle ? (
           <></>
         ) : (
           <Button className="h-7 truncate bg-muted p-0 text-sm font-normal text-black hover:bg-muted">

@@ -44,10 +44,10 @@ export default function FlowPage({ view }: { view?: boolean }): JSX.Element {
         )}
         <a
           target={"_blank"}
-          href="https://medium.com/logspace/langflow-datastax-better-together-1b7462cebc4d"
-          className="langflow-page-icon"
+          href="https://medium.com/logspace/dfapp-datastax-better-together-1b7462cebc4d"
+          className="dfapp-page-icon"
         >
-          {version && <div className="mt-1">Langflow 🤝 DataStax</div>}
+          {version && <div className="mt-1">Dataformer App 🤝 DataStax</div>}
           <div className={version ? "mt-2" : "mt-1"}>⛓️ v{version}</div>
         </a>
       </div>
