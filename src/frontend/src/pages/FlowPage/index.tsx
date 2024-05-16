@@ -10,7 +10,7 @@ import useFlowStore from "../../stores/flowStore";
 
 export default function FlowPage({ view }: { view?: boolean }): JSX.Element {
   const setCurrentFlowId = useFlowsManagerStore(
-    (state) => state.setCurrentFlowId
+    (state) => state.setCurrentFlowId,
   );
   const version = useDarkStore((state) => state.version);
   const setOnFlowPage = useFlowStore((state) => state.setOnFlowPage);
@@ -21,7 +21,7 @@ export default function FlowPage({ view }: { view?: boolean }): JSX.Element {
   useEffect(() => {
     setCurrentFlowId(id!);
     setOnFlowPage(true);
-    
+
     return () => {
       setOnFlowPage(false);
     };
@@ -48,7 +48,7 @@ export default function FlowPage({ view }: { view?: boolean }): JSX.Element {
           className="dfapp-page-icon"
         >
           {version && <div className="mt-1">Dataformer App 🤝 DataStax</div>}
-          <div className={version ? "mt-2" : "mt-1"}>⛓️ v{version}</div>
+          <div className={version ? "mt-2" : "mt-1"}>DF v{version}</div>
         </a>
       </div>
     </>
