@@ -8,7 +8,7 @@
       "module": "uvicorn",
       "args": [
         "--factory",
-        "langflow.main:create_app",
+        "dfapp.main:create_app",
         "--port",
         "7860",
         "--reload",
@@ -20,7 +20,7 @@
       "jinja": true,
       "justMyCode": false,
       "env": {
-        "LANGFLOW_LOG_LEVEL": "debug"
+        "DFAPP_LOG_LEVEL": "debug"
       },
       "envFile": "${workspaceFolder}/.env"
     },
@@ -28,16 +28,16 @@
       "name": "Debug CLI",
       "type": "python",
       "request": "launch",
-      "module": "langflow",
+      "module": "dfapp",
       "args": [
         "run",
         "--path",
-        "${workspaceFolder}/src/backend/base/langflow/frontend"
+        "${workspaceFolder}/src/backend/base/dfapp/frontend"
       ],
       "jinja": true,
       "justMyCode": false,
       "env": {
-        "LANGFLOW_LOG_LEVEL": "debug"
+        "DFAPP_LOG_LEVEL": "debug"
       },
       "envFile": "${workspaceFolder}/.env"
     },

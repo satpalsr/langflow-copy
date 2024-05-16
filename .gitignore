@@ -247,7 +247,7 @@ dmypy.json
 
 # Poetry
 .testenv/*
-langflow.db
+dfapp.db
 
 
 .githooks/prepare-commit-msg
@@ -257,8 +257,8 @@ langflow.db
 .docusaurus/
 
 /tmp/*
-src/backend/langflow/frontend/
-src/backend/base/langflow/frontend/
+src/backend/dfapp/frontend/
+src/backend/base/dfapp/frontend/
 .docker
 scratchpad*
 chroma*/*
